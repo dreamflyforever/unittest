@@ -1,0 +1,14 @@
+env = Environment(
+	CC = 'clang',
+	CFLAGS = ['-g', '-fcolor-diagnostics', '-Wall', '-I.']
+)
+
+obj_sub = env.Object('sub.c')
+
+obj_add = env.Object('add.c')
+
+test_sub = env.Program("test_sub", ['test_sub.c', obj_sub])
+
+test_add = env.Program("test_add", ['test_add.c', obj_add])
+
+main = env.Program("main", ['main.c', obj_sub, obj_add]);
