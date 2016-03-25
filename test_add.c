@@ -33,12 +33,12 @@ int main()
 	int pass = 0, all = 0;
 	int retvalue;
 
-	CHECK_EQ(1, 1, 3, all, pass);
+	CHECK_EQ(1, 1, 2, all, pass);
 	CHECK_EQ(2, 1, 3, all, pass);
-	CHECK_EQ(3, 1, 3, all, pass);
-	CHECK_EQ(4, 1, 3, all, pass);
-	CHECK_EQ(5, 1, 3, all, pass);
-	CHECK_EQ(6, 1, 3, all, pass);
+	CHECK_EQ(3, 1, 4, all, pass);
+	CHECK_EQ(4, 1, 5, all, pass);
+	CHECK_EQ(5, 1, 6, all, pass);
+	CHECK_EQ(6, 1, 7, all, pass);
 
 	printf("All Test Done!\n\n");
 	printf("Result: %2d/%2d [PASS/TOTAL]\n\n", pass, all);

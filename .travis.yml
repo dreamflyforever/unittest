@@ -1,0 +1,9 @@
+language: c
+compiler:
+  - gcc
+script:
+  - scons
+  - ./test_add; ./test_sub; ./main
+notifications:
+  email:
+    - shanjin.yang@aispeech.com
