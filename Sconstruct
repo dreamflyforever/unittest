@@ -1,6 +1,6 @@
 env = Environment(
-	CC = 'clang',
-	CFLAGS = ['-g', '-fcolor-diagnostics', '-Wall', '-I.']
+	CC = 'gcc',
+	CFLAGS = ['-g', '-Wall', '-I.']
 )
 
 obj_sub = env.Object('sub.c')
